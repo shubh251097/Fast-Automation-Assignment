@@ -15,7 +15,6 @@ public class Test {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://fast.com/");
 		System.out.println(driver.getTitle());
 
